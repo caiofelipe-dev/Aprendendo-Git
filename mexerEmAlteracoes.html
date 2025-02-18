@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Revertendo commits</h2>
+        <p>Para reverter um commit no Git, você pode usar o comando <strong>git revert &lt;hash&gt;</strong> seguido do hash do commit que deseja reverter. Isso criará um novo commit que desfaz as alterações do commit original.</p>
+    </section>
+    <section>
+        <h2>Resetando commits</h2>
+        <p>
+            Para apontar a branch atual pra um commit específico (removendo os posteriores, caso não contenham branch) basta usar <strong>git reset &lt;hash&gt;</strong> seguido do hash do commit que deseja reverter. Isso criará um novo commit que desfaz as alterações do commit original.
+        </p>
+        <p>Use --hard pra descartar alterações feitas.</p>
+        <p>Use --soft pra manter as alterações dentro do índice(index) já adicionado, marcados como staged changes, prontos para serem commitados.</p>
+        <p>Use --mixed pra manter as alterações dentro do índice(index), mas fora da árvore de trabalho(diretório local), marcados como changes.</p>
+    </section>
+</body>
+</html>
